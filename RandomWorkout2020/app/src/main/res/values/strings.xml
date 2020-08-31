@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Soni Workout</string>
+    <string name="BtnCap">Generate Workout!</string>
+    <string name="LogTag">Random Workout Log:</string>
+    <string name="MinsPrompt">Choose Minutes:</string>
+    <string name="ClickVid">Click any item for a demonstration video</string>
+    <string name="NoVid">No video for that exercise.  Isn\'t it obvious??</string>
+    <string name="Indoor">Indoor</string>
+    <string name="Outdoor">Outdoor</string>
+</resources>

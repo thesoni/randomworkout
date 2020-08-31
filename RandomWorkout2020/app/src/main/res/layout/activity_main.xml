@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnGenerateWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/BtnCap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:visibility="visible" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="192dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radIndoor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Indoor" />
+
+        <RadioButton
+            android:id="@+id/radOutdoor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Outdoor" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerMinutes"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChooseMins" />
+
+    <TextView
+        android:id="@+id/textViewChooseMins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MinsPrompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewExercises"
+        android:layout_width="409dp"
+        android:layout_height="607dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGenerateWorkout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
